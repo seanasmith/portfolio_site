@@ -1,0 +1,457 @@
+/*
+================================================================================
+
+
+                            ©2018 Sean A. Smith
+                     Graduate Student, Texas State Univ.
+                            sasmith@txstate.edu
+
+
+================================================================================
+*/
+
+/**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/
+
+/*
+================================================
+                    generics
+================================================
+*/
+
+#work-mobile {
+  display: none;
+}
+
+body {
+  margin: 0;
+  font-family: 'Helvetica', sans-serif;
+}
+
+#sticky {
+  position: fixed;
+  z-index: 2;
+  width: 100vw;
+}
+
+#menu {
+  position: relative;
+  z-index: 6;
+  margin: 0;
+  float: right;
+  margin-right: 20px;
+  margin-top: 10px;
+  cursor: pointer;
+
+}
+
+#menu div {
+  width: 20px;
+  height: 20px;
+  background-color: #0E1A24;
+  margin: 6px 0;
+  border: 1px solid #FFF;
+  border-radius: 20px;
+}
+
+
+nav {
+  float: right;
+  position: absolute;
+  z-index: 5;
+  display: none;
+  height: auto;
+  background-color: rgba(0, 0, 0, 0);
+  height: 100vh;
+  width: 100vw;
+}
+
+nav ul {
+  top:10px;
+  right: 0;
+  background-color: rgba(0,0,0,0.33);
+  position: fixed;
+  list-style: none;
+  margin-top: 0;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+nav ul li {
+  padding: 30px 0 30px 0;
+  margin-right: 20px;
+  text-align: center;
+  font-weight: 400;
+  display: inline;
+  font-style: italic;
+}
+
+.section {
+  height: 100vh;
+}
+
+a {
+  color: #FFF;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #FFDB58;
+}
+
+.section-header {
+  font-style: italic;
+  letter-spacing: 20px;
+  font-weight: 100;
+  text-align: center;
+}
+
+/*
+================================================
+                    landing
+================================================
+*/
+
+#landing {
+  display: flex;
+  position: relative;
+  z-index: 1;
+  justify-content: center;
+  flex-direction: column;
+  clear: both;
+  background: linear-gradient(#374f2f , #0E1A24);
+}
+
+#landing h1 {
+  margin-bottom: 50px;
+  font-size: 8rem;
+  color: #FFF;
+  font-weight: 100;
+  margin-top: 17%;
+  text-align: center;
+}
+
+#description {
+  position: absolute;
+  display: none;
+}
+
+#landing h4 {
+  display: block;
+  text-align: center;
+  font-weight: 200;
+  letter-spacing: 5px;
+  margin: 0;
+  font-size: 1rem;
+  color: #FFDB58;
+}
+
+
+#arrow {
+  width: 30px;
+  height: 30px;
+  margin: auto;
+  position: relative;
+  bottom: 0;
+  border-bottom: 1px solid #cdcdcd;
+  border-right: 1px solid #cdcdcd;
+  transform: rotate(45deg);
+}
+
+
+/*
+================================================
+                    about
+================================================
+*/
+
+#about-clear {
+  padding-top: 5%;
+  color: #FFF;
+  clear: both;
+  width: 100%;
+  padding-bottom: 2.5%;
+}
+
+#about {
+  background-color: #0E1A24;
+  height: 110vh;
+}
+
+#about-items {
+  display: flex;
+  align-items: center;
+}
+
+#about img {
+  width: 25%;
+  float: left;
+  margin-left: 10%;
+  clear: both;
+  box-shadow: 0 0 0 9px #0E1A24,
+              0 0 0 18px #0E1A24,
+              0 0 0 20px #FFDB58;
+}
+
+#about p {
+  color: #FFF;
+  width: 70%;
+  margin-left: 10%;
+  line-height: 25px;
+
+}
+
+#dropcap {
+  color: #FFDB58;
+  font-size: 4rem;
+  float: left;
+  line-height: 60px;
+  margin-right: 5px;
+  padding-bottom: 0;
+  border-bottom: 5px solid #FFDB58;
+}
+
+
+
+/*
+================================================
+                      work
+================================================
+*/
+
+#work .section-header {
+  padding-top: 5%;
+  color: #0E1A24;
+  padding-bottom: 2%;
+}
+
+#work-section {
+  width: 39%;
+  float: left;
+  height: 70vh;
+  background-color: #FFF;
+  overflow: scroll;
+}
+
+#work-section ul {
+  list-style: none;
+  margin-left: 17%;
+}
+
+#work-section ul li {
+  margin-bottom: 8%;
+  padding-left: 2%;
+  border-left: 3px solid #0e1a24;;
+}
+
+#work-section a {
+  color: #0e1a24;
+  font-size: 2.5rem;
+}
+
+#work-section a:hover {
+  color: #FFDB58;
+}
+
+#work-description {
+  float: right;
+  color: #0e1a24;
+  width: 50%;
+}
+
+#work-description ul {
+  list-style: none;
+}
+
+#work-description ul li {
+  margin-bottom: 5%;
+}
+
+#work-description ul li span p {
+  margin-right: 40px;
+}
+
+#work-section ul li a span {
+  display: none;
+}
+
+/*
+================================================
+                    contact
+================================================
+*/
+
+#contact {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #FFDB58;
+  color: #0E1A24;
+}
+
+#contact h2 a {
+  font-size: 3rem;
+  color: #0E1A24;
+}
+
+#contact a:hover {
+  font-style: italic;
+  color: #FFDB58;
+  text-shadow:
+   -1px -1px 0 #0E1A24,
+    1px -1px 0 #0E1A24,
+    -1px 1px 0 #0E1A24,
+     1px 1px 0 #0E1A24;
+}
+
+/*
+================================================
+                    footer
+================================================
+*/
+
+footer {
+  height: 30px;
+  text-align: right;
+  background-color: #FFDB58;
+}
+
+footer p {
+  margin-right: 3%;
+  margin-top: 0;
+  color: #0E1A24;
+}
+
+/*
+================================================
+                  Responsive
+================================================
+*/
+
+/*
+================================================
+              phone media query
+================================================
+*/
+
+
+@media screen and (max-width: 500px) {
+
+  #arrow {
+    border-color: #FFF;
+    top: -40px;
+  }
+
+  #menu {
+    display: none;
+  }
+
+  #landing {
+    background: linear-gradient(#374f2f , #0E1A24);
+  }
+
+  #landing h1 {
+    background: none;
+    color: #FFF;
+    font-size: 7.5rem;
+    margin-top: 40px;
+    margin-bottom: 40px;
+
+    text-align: center;
+  }
+
+  #word {
+    font-size: 1rem;
+    letter-spacing: 10px;
+  }
+
+  .section-header {
+    letter-spacing: normal;
+  }
+
+  #about {
+    height: 170vh;
+  }
+
+  #about-items {
+    display: block;
+  }
+
+  #about img {
+    float: none;
+    width: 100%;
+    box-shadow: none;
+    margin: 0;
+  }
+
+  #about p {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #work-description {
+    display: none;
+  }
+
+  #work-mobile {
+    display: block;
+  }
+
+  #work-mobile h1 {
+    text-align: center;
+  }
+
+  #work-mobile p {
+    width: 95%;
+    margin: auto;
+  }
+
+  #work-mobile p a {
+    color: #FFDB58;
+    background-color: #0E1A24;
+    padding: 10px;
+  }
+
+  #contact a:hover {
+    font-size: 2rem;
+  }
+}
+
+/*
+==========================================
+          tablet media query
+==========================================
+*/
+
+@media screen and (max-width: 1030px) {
+
+  #work-section {
+    width: 100%;
+  }
+
+  #work-section ul {
+    margin-left: 0;
+  }
+
+  #work-section ul li {
+    margin-bottom: 3%;;
+  }
+
+  #work-description {
+    display: none;
+  }
+
+  #work-section ul li a span {
+    display: block;
+    font-size: 1rem;
+    padding-top: 10px;
+  }
+
+  .section-header {
+    letter-spacing: normal;
+  }
+}
